@@ -1,0 +1,1 @@
+export CLASSPATH=.:$(hadoop classpath):$(hbase classpath)
