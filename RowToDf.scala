@@ -15,8 +15,7 @@ def convertRowToArrayOfValues(row: IndexedSeq[(String, String)], allColsMap: Map
       allColsMap.get(colName) match {
         case Some(colIx) => retRow(colIx) = value
         case None => System.err.println(s"Invalid Column name in a cell: $colName")
-      }
-      retRow(allColsMap(colName)) = value
+      }      
     })
     retRow
 }
